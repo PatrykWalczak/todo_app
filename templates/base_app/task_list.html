@@ -1,21 +1,30 @@
+{% extends 'base_app/main.html' %}
+{% block content %}
+
+
 {% if request.user.is_authenticated %}
-    <p>{{ request.user }}</p>
-    <a href="">Logout</a>
+    <p>Hello {{ request.user }}</p>
+    <a href="{% url 'logout' %}">Logout</a>
 {% else %}
-    <a href="">Login</a>
+    <a href="{% url 'login' %}">Login</a>
 {% endif %}
 
 
-<h1>To do</h1>
+<h1>To do </h1>
 <a href="{% url 'task-create' %}">Add Task</a>
+
+<form method="GET">
+    <input type="text" name="search-area" value="{{ search_input }}">
+    <input type="submit" value="Search">
+</form>
+
 <table>
     <tr>
         <th>Items</th>
     </tr>
-
-    {% for taskmodels in tasklist %} {% comment %}sprawdzamy całą baze danych{% endcomment %}
+    {% for taskmodels in tasks %} {% comment %}sprawdzamy całą baze danych{% endcomment %}
         <tr>
-            <td>{{ taskmodels.titel }}</td>{% comment %}przekazywanie wyników w pythonie-django do templatki{% endcomment %}
+            <td>{{ taskmodels.title }}</td>{% comment %}przekazywanie wyników w pythonie-django do templatki{% endcomment %}
             <td><a href="{% url 'single-task' taskmodels.id %}">View</a></td>
             <td><a href="{% url 'update-task' taskmodels.id %}">Update</a></td>
             <td><a href="{% url 'delete-task' taskmodels.id %}">Delete</a></td>
@@ -24,3 +33,6 @@
     <h3>No item in list</h3>
     {% endfor %}
 </table>
+
+
+{% endblock content %}
