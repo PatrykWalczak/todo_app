@@ -1,15 +1,16 @@
 {% extends 'base_app/main.html' %}
 {% block content %}
 
+<div class="top-bar">
+    <h1>Login</h1>
+</div>
 
-<h1>Login</h1>
-
-<form method="POST">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Login">
-</form>
-
-<p>Dont have an account ? <a href="{% url 'register' %}">Register</a> </p>
-
+<div class="form-view">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input class="button" type="submit" value="Login">
+        <p>Don't have an account ? <a href="{% url 'register' %}">Register</a> </p>
+    </form>
+</div>
 {% endblock content %}

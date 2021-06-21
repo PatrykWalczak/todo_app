@@ -1,4 +1,139 @@
 html, body {
-    background: grey ;
+
+    background: #8eb9d4;
+    padding-top: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+a, p {
+    color:#6f7b8c;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+.container {
+    max-width: 550px;
+
+    margin: auto;
+    background-color: #fafafa;
+    -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+    box-shadow: 10px 10px 20px -4px;
+    border-radius: 12px 12px 0 0;
+
+
+}
+
+.top-bar {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    border-radius: 12px 12px 0 0;
+    background-image: linear-gradient(to top, #c9d0da, #bccfe2, #accfe8, #96d0ed, #7cd1f0);;
+}
+
+.top-bar a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000000;
+}
+
+.task-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-top: 1px solid rgb(226, 226, 266);
+}
+
+.task-title {
+    display: flex;
+    margin: 5px;
+}
+
+.task-title a {
+    text-decoration: none;
+    color: cornflowerblue;
+    margin-left: 10px;
+}
+
+.task-complete-icon {
+    height: 20px;
+    width: 20px;
+    border-radius: 10%;
+    background-color: #56F506;
+}
+
+.task-incomplete-icon {
+    height: 20px;
+    width: 20px;
+    border-radius: 10%;
+    background-color: cornflowerblue;
+}
+
+.delete-link {
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 0;
+    color: #ec0303;
+}
+
+.search-wrapper {
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    background-color: #FFFFFF;
+}
+
+.search-wrapper a {
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 0;
+    display: flex;
+}
+
+.form-view {
+    padding: 20px;
+
+}
+
+input[type=text],
+input[type=password],
+textarea {
+    border-radius: 5px;
+    border: 1px solid cornflowerblue;
+    padding: 10px;
+    width: 90%;
+}
+
+label {
+    padding-top: 4px !important;
+    display: block;
+    color: #6f7b8c;
+}
+
+.button {
+    border: 1px solid #757575;
+    background-color: #FFFFFF;
+    color: cornflowerblue;
+    padding: 6px;
+    font-size: 13px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover {
+    color: #000000;
 }
 

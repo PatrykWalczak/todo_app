@@ -2,13 +2,26 @@
 {% block content %}
 
 
-<h1>Register</h1>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Register">
-</form>
+<div class="top-bar">
+    <h1>Register</h1>
+</div>
 
-<p>You have an account ? <a href="{% url 'login' %}">Login</a></p>
 
+<div class="form-view">
+    <form method="post">
+        {% csrf_token %}
+        <label> {{ form.username.label }}</label>
+        {{ form.username }}
+
+        <label> {{ form.password1.label }}</label>
+        {{ form.password1 }}
+
+        <label> {{ form.password2.label }}</label>
+        {{ form.password2 }}
+        <input style="margin-top:10px;" class="button"  type="submit" value="Register">
+        <p>You have an account ? <a href="{% url 'login' %}">Login</a></p>
+    </form>
+
+
+</div>
 {% endblock content %}
