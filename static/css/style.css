@@ -13,11 +13,11 @@ a, p {
 h1, h2, h3, h4, h5, h6 {
     color: white;
     font-family: 'Playfair Display', serif;
+
 }
 
 .container {
     max-width: 550px;
-
     margin: auto;
     background-color: #fafafa;
     -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
@@ -32,12 +32,16 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px;
     justify-content: space-between;
     border-radius: 12px 12px 0 0;
-    background-image: linear-gradient(to top, #c9d0da, #bccfe2, #accfe8, #96d0ed, #7cd1f0);;
+    background-image: linear-gradient(to top, #c9d0da, #bccfe2, #accfe8, #96d0ed, #7cd1f0);
+
 }
 
 .top-bar a {
     color: #FFFFFF;
     text-decoration: none;
+}
+.top-bar h1 {
+
 }
 
 a:hover {
@@ -51,6 +55,7 @@ a:hover {
     padding: 20px;
     background-color: #FFFFFF;
     border-top: 1px solid rgb(226, 226, 266);
+
 }
 
 .task-title {
@@ -92,6 +97,7 @@ a:hover {
     align-items: center;
     display: flex;
     background-color: #FFFFFF;
+
 }
 
 .search-wrapper a {
@@ -103,7 +109,8 @@ a:hover {
 }
 
 .form-view {
-    padding: 20px;
+    padding: 30px;
+
 
 }
 
@@ -114,12 +121,14 @@ textarea {
     border: 1px solid cornflowerblue;
     padding: 10px;
     width: 90%;
+
 }
 
 label {
     padding-top: 4px !important;
     display: block;
     color: #6f7b8c;
+
 }
 
 .button {
