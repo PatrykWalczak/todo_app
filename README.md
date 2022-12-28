@@ -1,7 +1,7 @@
 ## Table of contents
 
-* authorization system (register, login)
-* adding, removing and editing tasks
+* authentication (register, login)
+* adding, editing and removing tasks
 
 
 ## General info
