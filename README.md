@@ -1,3 +1,7 @@
+## To-do Application
+
+application written by using Django framework, contains basic functionality like signup, login, password changing user and also adding, removing and moving tasks to section "done". It was created while learining Django. Uses Class-based views.
+
 ## Table of contents
 
 * authentication (register, login)
